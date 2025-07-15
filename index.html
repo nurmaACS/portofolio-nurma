@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <img src="profile.png" alt="Profile Picture" class="profile-img">
+    <h1>My name is Nurma<br>Web Developer</h1>
+    <h2>HEAD OF DESIGN STUDIO</h2>
+
+    <div class="cards">
+      <div class="card">
+        <p>GRAPHIC DESIGN</p>
+        <a href="#">MORE</a>
+      </div>
+      <div class="card">
+        <p>WEB DESIGN</p>
+        <a href="#">MORE</a>
+      </div>
+      <div class="card">
+        <p>SOFTWARE</p>
+        <a href="#">MORE</a>
+      </div>
+      <div class="card">
+        <p>APPLICATION</p>
+        <a href="#">MORE</a>
+      </div>
+    </div>
+
+    <div class="highlight">
+      I am happy to know you that 300+ projects done successfully!
+    </div>
+
+    <a href="#" class="btn" onclick="showForm()">SEND A MESSAGE</a>
+  </div>
+
+  <div class="message-form" id="messageForm">
+    <div class="form-box">
+      <h3>Send a Message</h3>
+      <form action="#" method="post">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">KIRIM</button>
+        <button type="button" onclick="hideForm()" class="close-btn">TUTUP</button>
+      </form>
+    </div>
+  </div>
+
+   <footer>
+    <p>&copy; 2025 Nat Norton. All rights reserved.</p>
+    <p>
+      <a href="#">LinkedIn</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">Email</a>
+    </p>
+  </footer>
+  <script>
+    function showForm() {
+      document.getElementById('messageForm').style.display = 'flex';
+    }
+
+    function hideForm() {
+      document.getElementById('messageForm').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
